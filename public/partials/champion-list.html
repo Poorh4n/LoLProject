@@ -1,0 +1,10 @@
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<h3 class="panel-title">Champions</h3>
+	</div>
+	<div class="panel-body">
+		<a class="thumbnail pull-left fll" href="#/champion/detail/{{champion.id}}" ng-repeat="champion in champions">
+			<span class="media-object pull-left" style="width: {{champion.image.w}}px; height: {{champion.image.h}}px; background: url('/images/sprite/{{champion.image.sprite}}') -{{champion.image.x}}px -{{champion.image.y}}px no-repeat;"></span>
+		</a>
+	</div>
+</div>

@@ -1,0 +1,51 @@
+<div class="well">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="media">
+			  	<div class="pull-left">
+			  		<img class="media-object" src="/images/champion/{{champion.image.full}}" alt="{{champion.name}}">
+			  	</div>
+			  	<div class="media-body">
+				    <h1 class="media-heading">{{champion.name}}</h1>
+				    <small class="text-muted pull-left">{{champion.title}}</small>
+			  	</div>
+			  	<p>{{champion.blurb}}</p><p><a class="btn btn-primary" role="button">Daha Fazla »</a></p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label>Atak</label>
+			    <div class="progress progress-striped active">
+				  	<div class="progress-bar progress-bar-default"  role="progressbar" aria-valuenow="{{champion.info.attack}}" aria-valuemin="0" aria-valuemax="10" style="width: {{champion.info.attack*10}}%"></div>
+				</div>
+		  	</div>
+			<div class="form-group">
+			    <label>Defans</label>
+			    <div class="progress progress-striped active">
+				  	<div class="progress-bar progress-bar-success"  role="progressbar" aria-valuenow="{{champion.info.defense}}" aria-valuemin="0" aria-valuemax="10" style="width: {{champion.info.defense*10}}%"></div>
+				</div>
+		  	</div>
+		  	<div class="form-group">
+			    <label>Büyü Gücü</label>
+			    <div class="progress progress-striped active">
+				  	<div class="progress-bar progress-bar-danger"  role="progressbar" aria-valuenow="{{champion.info.magic}}" aria-valuemin="0" aria-valuemax="10" style="width: {{champion.info.magic*10}}%"></div>
+				</div>
+		  	</div>
+		  	<div class="form-group">
+			    <label>Zorluk</label>
+			    <div class="progress progress-striped active">
+				  	<div class="progress-bar progress-bar-warning"  role="progressbar" aria-valuenow="{{champion.info.difficulty}}" aria-valuemin="0" aria-valuemax="10" style="width: {{champion.info.difficulty*10}}%"></div>
+				</div>
+		  	</div>
+		</div>
+		<div class="col-md-4">
+			<ul class="list-group">
+				<li class="list-group-item"><small><strong>Atak </strong></small><span class="badge">{{champion.stats.attackdamage}}</span></li>
+				<li class="list-group-item"><small><strong>Sağlık </strong></small><span class="badge">{{champion.stats.hp}}</span></li>
+				<li class="list-group-item"><small><strong>Hız </strong></small><span class="badge">{{champion.stats.movespeed}}</span></li>
+				<li class="list-group-item"><small><strong>Zırh </strong></small><span class="badge">{{champion.stats.armor}}</span></li>
+				<li class="list-group-item"><small><strong>Büyü Direnci </strong></small><span class="badge">{{champion.stats.spellblock}}</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
