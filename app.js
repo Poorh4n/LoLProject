@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -27,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //static data
 var champions = JSON.parse(fs.readFileSync("public/json/champion.json"));
 
-// development only
+// development only Poyraz
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
