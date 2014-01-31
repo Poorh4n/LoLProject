@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //static data
 var champions = JSON.parse(fs.readFileSync("public/json/champion.json"));
 
-// development only Poyraz
+// development only Poyraz Ylmz
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
